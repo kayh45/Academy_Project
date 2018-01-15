@@ -12,5 +12,7 @@
 	
 	push test
 	
+	pull test
+	
 </body>
 </html>
