@@ -1,12 +1,15 @@
-# 9강 실습 1
-time = int(input("총 근무 시간을 입력하세요 : "))
-pay = int(input("시간 당 급여를 입력하세요 : "))
+# 9강 실습 2
+num = int(input("양의 정수를 입력하세요 : "))
 
-if time > 12 :
-    overTime = time - 12
-    overPay = pay * 1.3 * overTime
-    weekPay = pay * 12 + overPay    
-else :
-    weekPay = pay * time
+print(num, '의 약수  = ', end = '')
 
-print("총 급여는 ", int(weekPay), "원 입니다.")
+loop = 1
+count = 0
+while loop <= num :
+     if (num%loop == 0) :
+         print(loop, end = ' ')
+         count += 1
+     loop+=1
+
+print()
+print('약수의 개수 = ', count)
